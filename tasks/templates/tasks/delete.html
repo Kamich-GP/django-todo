@@ -1,0 +1,8 @@
+<p>Вы точно хотите удалить "{{item}}"?</p>
+
+<a href="{% url 'list' %}" >Отмена</a>
+
+<form method="POST" action="">
+    {% csrf_token %}
+    <input type="submit" name="Потверждаю">
+</form>
